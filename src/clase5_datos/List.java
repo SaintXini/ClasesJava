@@ -52,6 +52,6 @@ public class List {
 
 //        Las principales diferencias es que el array tiene un limite especifico y las lsitas tienen varios espacios
 //         y Siempre se trabaja con objetos
-        
+
     }
 }
