@@ -96,5 +96,26 @@ public class Loops {
             System.out.println("HOla, java");
             index++;
         } while (index < 5);
+
+
+        // Control de bucles
+
+        // - breack - para salir del bucle
+
+        for (String name: names) {
+            if(name.equals("Saint")) {
+                break;
+            }
+            System.out.println(name);
+        }
+
+        // -- continue -- para continuar con el bucle
+        for (int i = 0; i < 5; i++){
+            if (i == 3){
+                continue;
+            }
+            System.out.println(i);
+        }
+
     }
 }
