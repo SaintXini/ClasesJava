@@ -21,7 +21,7 @@ public class Loops {
         }
         System.out.println("\n");
 
-        String[] names = {"Martín", "Santiago", "Lala"};
+        String[] names = {"Martín","Saint", "Santiago", "Lala"};
 
         for (int index = 0; index < names.length; index++) {
             System.out.println(names[index]);
@@ -62,6 +62,39 @@ public class Loops {
             System.out.println(email.getKey());
             System.out.println(email.getValue());
         }
+        System.out.println("\n");
 
+
+        // - While - tiende a ser mucho más optimo mientras la condición sea verdadera
+
+        int index = 0;
+        while (index < 5) {
+            System.out.println("hola, Java!");
+            index++;
+        }
+        System.out.println("\n");
+
+        index = 0;
+        boolean find =false;
+        while (!find) {
+            System.out.println(names[index]);
+
+            if (names[index].equals("Saint")) {
+                find = true;
+            }
+            index++;
+        }
+
+
+        // Una variante del while
+        // si deseo que se ejecute la primera vez y luego ya veremos
+        // do - while
+
+        index = 0;
+
+        do {
+            System.out.println("HOla, java");
+            index++;
+        } while (index < 5);
     }
 }
