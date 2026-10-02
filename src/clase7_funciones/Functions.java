@@ -18,6 +18,12 @@ public class Functions {
 
         var users = new ArrayList<>(Arrays.asList("asidf", "kdfjasdklf"));
         sendEmailToUser(users);
+
+
+        // Funciones con retornos
+
+        var state = sendEmailWithState("saintl");
+        System.out.println(state);
     }
 
         /// Funcion sin parametros y sin retorno
@@ -41,5 +47,20 @@ public class Functions {
         for(String email: emails){
             System.out.println("Se envia el Email a " + email);
         }
+    }
+
+    // FUNCIONES CON RETORNO
+
+    // La sobrecarga de funciones, funciona si se recarga con el mismo nombre, pero si es de un tipo diferente no funciona
+
+    public static boolean sendEmailWithState (String email) {
+
+        if (email.isEmpty()){
+            return false;
+        }
+
+        System.out.println("Se envia el Email" + email);
+
+        return true;
     }
 }
