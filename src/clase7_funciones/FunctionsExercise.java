@@ -16,10 +16,13 @@ public class FunctionsExercise {
         cuadrado(12);
 
         // 5. Escribe una función que reciba un número y diga si es par o impar.
+        par(12);
 
         // 6. Crea un método que reciba una edad y retorne true si es mayor de edad (y false en caso contrario).
+        edad(12);
 
         // 7. Implementa una función que reciba una cadena y retorne su longitud.
+        obtenerLongitud("lalalallala");
 
         //  8. Crea un método que reciba un array de enteros, calcula su media y lo retorna.
 
@@ -52,4 +55,53 @@ public class FunctionsExercise {
         var resultado = a * a;
         System.out.println("Resultado de la operacion es:  " + resultado);
     }
+
+    // 5. Escribe una función que reciba un número y diga si es par o impar.
+    public static void par(int a){
+
+        if (a %2 == 0) {
+            System.out.println("El numero es par\n");
+        } else {
+            System.out.println("El numero es impar\n");
+        }
+    }
+
+
+    // 6. Crea un método que reciba una edad y retorne true si es mayor de edad (y false en caso contrario).
+    public static boolean edad(int age){
+
+        return age >= 18;
+
+    }
+
+    // 7. Implementa una función que reciba una cadena y retorne su longitud.
+    public static int obtenerLongitud(String cadena) {
+        return cadena.length();
+    }
+
+    //  8. Crea un método que reciba un array de enteros, calcula su media y lo retorna.
+    public static double calcularMedia(int[] numeros) {
+        if (numeros == null || numeros.length == 0) {
+            return 0.0; // Evitamos división por cero
+        }
+
+        double suma = 0;
+        for (int num : numeros) {
+            suma += num;
+        }
+        return suma / numeros.length;
+    }
+    // 9. Método que calcula el factorial de un número
+    public static long calcularFactorial(int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("El número debe ser positivo.");
+        }
+
+        long factorial = 1;
+        for (int i = 1; i <= n; i++) {
+            factorial *= i;
+        }
+        return factorial;
+    }
+
 }
