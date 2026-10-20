@@ -4,7 +4,7 @@ public class inheritance {
 
     public static void main(String[] args) {
 
-        // Herencia
+        // Herencia ( es un )
         // Java solo hace herencia simple, osea solo una clase por padre
 
         var animal = new Animal("Mish y Tarme");
