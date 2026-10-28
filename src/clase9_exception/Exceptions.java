@@ -64,6 +64,16 @@ public class Exceptions {
         } catch (IllegalArgumentException e) {
             System.out.println("Error " + e);
         }
+
+        // Excepciones personalizadas
+
+        try {
+            throwExample.checkScore(450);
+        } catch (CustomException e) {
+            System.out.println("Error revisando la información " + e.getMessage());
+        }
+
         System.out.println("Fin ");
+
     }
 }

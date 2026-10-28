@@ -10,4 +10,14 @@ public class ThrowExample {
             System.out.println("Es mayor de edad");
         }
     }
+
+    // Aca es llamado las excepciones personalizadas
+    public void checkScore(int score) throws CustomException {
+
+        if (score < 0 || score > 100) {
+            throw new CustomException("La puntuación tiene que estar entre 0 y 100");
+        } else  {
+            System.out.println("puntuación valida " + score);
+        }
+    }
 }
