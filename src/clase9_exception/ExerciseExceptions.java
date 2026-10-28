@@ -47,13 +47,6 @@ public class ExerciseExceptions {
         } finally {
             System.out.println("Este bloque 'finally' se ejecuta SIEMPRE, haya o no error.");
         }
-        // 5. Crea una clase TemperatureChecker que lanza una excepción personalizada si la temperatura es menor a -50 o mayor a 50.
 
-        System.out.println("\n--- Ejercicio 5 ---");
-        try {
-            TemperatureChecker.verificarTemperatura(60); // Lanza excepción personalizada
-        } catch (InvalidTemperatureException e) {
-            System.out.println("Excepción personalizada capturada: " + e.getMessage());
-        }
     }
 }
