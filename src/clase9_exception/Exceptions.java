@@ -55,6 +55,15 @@ public class Exceptions {
         }
         System.out.println("fin");
 
-        7.56 minutos me quede 
+
+        // Throw
+        var throwExample = new ThrowExample();
+        try {
+            throwExample.checkAge(15);
+
+        } catch (IllegalArgumentException e) {
+            System.out.println("Error " + e);
+        }
+        System.out.println("Fin ");
     }
 }
